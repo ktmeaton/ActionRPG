@@ -23,7 +23,6 @@
     touch README.md
     git add -A
     git commit -m "setup README and gitignore"
-    git push origin
     ```
 
 1. Configure Project for 2D Pixel Art.
@@ -34,11 +33,16 @@
     - Import Tab -> Import As -> Preset -> Set as Default for 'Texture'
     - Save
 
+    ```bash
+    git add -A
+    git commit -m "configure project for 2D pixel art"
+    ```
+
 
 1. Add Assets.
 
     ```bash
-    wget https://github.com/uheartbeast/youtube-tutorials/raw/master/Action%20RPG/Action%20RPG%20Resources.zip ;
+    wget https://github.com/uheartbeast/youtube-tutorials/raw/master/ ;Action%20RPG/Action%20RPG%20Resources.zip ;
     unzip Action\ RPG\ Resources.zip;
     mv Action\ RPG\ Resources/* . ;
     rm -r Action\ RPG\ Resources Action\ RPG\ Resources.zip;
