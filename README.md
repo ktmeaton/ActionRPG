@@ -65,3 +65,24 @@
     - Rename 'Node2D' to 'World'.
     - Scene -> Save Scene As -> ```World.tscn```
     - Play -> Select -> ```World.tscn```
+    - Save
+
+   
+    ```bash
+    git add -A
+    git commit -m "create main scene World"   
+    ```  
+
+    - Drag a ```World/Bush.png``` into the scene.
+    - Project -> Project Settings -> Display -> Window:
+        - Width: 320
+        - Height: 180
+        - Test Width: 1280
+        - Height: 720
+    - Project -> Project Settings -> Display -> Stretch
+        - Mode: 2d
+
+     ```bash
+    git add -A
+    git commit -m "configure scene resolution and scaling"   
+    ```     
