@@ -19,5 +19,16 @@
 ### HTML5
 
 - Project -> Export -> Add... -> HTML5
-- Export Path: ```builds/html5/ActionRPG.html```
+- Export Path: ```builds/html5/index.html```
 - Install XAMPP to run locally.
+
+```bash
+cp -r builds/html5/ .. ;
+
+git checkout --orphan html5
+git rm -rf *
+rm .gitignore
+
+cp ../html5/* .
+
+```

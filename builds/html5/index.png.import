@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ActionRPG.png-31215739ebdb512d04373c145e536248.stex"
+path="res://.import/index.png-2523555c7d9087f1340cdcb3fd562b42.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://builds/html5/ActionRPG.png"
-dest_files=[ "res://.import/ActionRPG.png-31215739ebdb512d04373c145e536248.stex" ]
+source_file="res://builds/html5/index.png"
+dest_files=[ "res://.import/index.png-2523555c7d9087f1340cdcb3fd562b42.stex" ]
 
 [params]
 
