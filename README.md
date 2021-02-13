@@ -22,6 +22,9 @@
 - Export Path: ```builds/html5/index.html```
 - Install XAMPP to run locally.
 
+
+### Manually Deploy 
+
 ```bash
 cp -r builds/html5/ .. ;
 
@@ -32,3 +35,18 @@ rm .gitignore
 cp ../html5/* .
 
 ```
+
+## Actions
+
+```
+mkdir .github/ ; 
+mkdir .github/workflows/ ;
+cd .github/workflows/ ;
+wget https://raw.githubusercontent.com/aBARICHELLO/godot-ci/master/.github/workflows/godot-ci.yml
+
+```
+
+## Credits
+
+- ActionRPG Resources (Attribution and License)
+- Godot CI (Attribution and License)
