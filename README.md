@@ -58,4 +58,10 @@
     git add -A
     git commit -m "import assets"   
     ``` 
-1.
+
+1. Configure Scene Resolution and Scaling.
+
+    - Scene -> 2D Scene
+    - Rename 'Node2D' to 'World'.
+    - Scene -> Save Scene As -> ```World.tscn```
+    - Play -> Select -> ```World.tscn```
