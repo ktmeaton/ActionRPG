@@ -15,3 +15,9 @@
 - Project -> Export -> Add... -> Windows Desktop
 - Manage Export Templates -> Download -> Official 3.2.3 [HTTPS]
 - Export Path: ```builds/win/ActionRPG.exe```
+
+### HTML5
+
+- Project -> Export -> Add... -> HTML5
+- Export Path: ```builds/html5/ActionRPG.html```
+- Install XAMPP to run locally.
