@@ -39,13 +39,23 @@
     ```
 
 
-1. Add Assets.
+1. Import Assets.
 
     ```bash
-    wget https://github.com/uheartbeast/youtube-tutorials/raw/master/ ;Action%20RPG/Action%20RPG%20Resources.zip ;
-    unzip Action\ RPG\ Resources.zip;
+    wget https://github.com/uheartbeast/youtube-tutorials/raw/master/Action%20RPG/Action%20RPG%20Resources.zip ;
+    unzip Action\ RPG\ Resources.zip ;
     mv Action\ RPG\ Resources/* . ;
-    rm -r Action\ RPG\ Resources Action\ RPG\ Resources.zip;
+    rm -r Action\ RPG\ Resources Action\ RPG\ Resources.zip ;
+
+    git add -A
+    git commit -m "add assets"   
     ```
 
+    - Open the Godot Project (Assets are now imported)
+    - Save
+
+    ```bash
+    git add -A
+    git commit -m "import assets"   
+    ``` 
 1.
