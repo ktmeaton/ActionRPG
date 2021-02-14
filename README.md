@@ -1,6 +1,9 @@
 # ActionRPG
 
+A repo following the Godot tutorial by [heartgamedev](https://www.heartgamedev.com/).
+
 [Tutorial Playlist](https://www.youtube.com/watch?v=mAbG8Oi-SvQ&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&ab_channel=HeartBeast)
+
 ## Table of Contents
 
 - [Episode 00](https://github.com/ktmeaton/ActionRPG/blob/master/README.md) - [Checkout](https://github.com/ktmeaton/ActionRPG/tree/a58299c51609ade4d5491ea1708bce5cb898b776)
