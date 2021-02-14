@@ -4,14 +4,14 @@ name: Godot Export
 # Workflow conditions
 on:
   push:
-    branches:
-      - master
-      - dev
-  pull_request:
-    branches:
-      - '*'
-  release:
-    types: [published]
+  #  branches:
+  #    - master
+  #    - dev
+  #pull_request:
+  #  branches:
+  #    - '*'
+  #release:
+  #  types: [published]
 #------------------------------------------------------------------------------
 env:
   GODOT_VERSION: 3.2.3
@@ -45,7 +45,6 @@ jobs:
           godot -v --export "Windows Desktop" ./build/windows/$EXPORT_NAME.exe
 
       - name: Upload Artifact
-        if: !env.ACT
         uses: actions/upload-artifact@v1
         with:
           name: windows
