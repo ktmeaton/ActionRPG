@@ -3,31 +3,43 @@ name: Godot Release
 #------------------------------------------------------------------------------
 on:
   push:
+    branches:
+      - master
+      - dev  
     # Sequence of patterns matched against refs/tags
     tags:
       - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
 #------------------------------------------------------------------------------
 jobs:
 
-  build:
-    name: Create Release
+  release:
+    name: Create Release 🎉
     runs-on: ubuntu-latest
     steps:
 
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Get commit summary
+        run: | 
+          #TODO: find the previous tag somehow right here
+          previousTag=$(git tag --sort=-creatordate | sed -n 2p)
+          echo "previousTag : $previousTag"
+          
+          commitSummary="$(git log $previousTag..${{ github.ref }})"
+          echo "::set-env name=COMMIT_SUMMARY::\"$commitSummary\""
+
+      # - name: Checkout code
+      #   uses: actions/checkout@v2
         
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body: |
-            Changes in this Release
-            - First Change
-            - Second Change
-          draft: false
-          prerelease: false
+      # - name: Create Release
+      #   id: create_release
+      #   uses: actions/create-release@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+      #   with:
+      #     tag_name: ${{ github.ref }}
+      #     release_name: Release ${{ github.ref }}
+      #     body: |
+      #       Changes in this Release
+      #       - First Change
+      #       - Second Change
+      #     draft: false
+      #     prerelease: false
