@@ -10,6 +10,6 @@ git log --pretty=oneline --abbrev-commit ${OLD_VER}..${NEW_VER} | \
   do
     hash=`echo $line | cut -d " " -f 1`
     msg=`echo $line | sed "s/$hash //g"`
-    echo -e "[[$hash]($BASE/$hash)]\t$msg";
+    echo -e "* [[$hash]($BASE/$hash)] - $msg";
   done;
  
