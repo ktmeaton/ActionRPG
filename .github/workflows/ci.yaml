@@ -19,6 +19,7 @@ env:
   GODOT_VERSION: 3.2.3
   PROJECT_PATH: .
   EXPORT_NAME: ActionRPG
+  RETENTION_DAYS: 7
 #------------------------------------------------------------------------------
 jobs:
   #----------------------------------------------------------------------------
@@ -53,6 +54,7 @@ jobs:
         with:
           name: windows
           path: build/windows
+          retention-days: $RETENTION_DAYS
   #----------------------------------------------------------------------------
   export-linux:
     name: Linux Export 🐧
@@ -84,6 +86,7 @@ jobs:
         with:
           name: linux
           path: build/linux
+          retention-days: $RETENTION_DAYS          
   #----------------------------------------------------------------------------
   export-web:
     name: Web Export 💠
@@ -114,6 +117,7 @@ jobs:
         with:
           name: html5
           path: build/html5
+          retention-days: $RETENTION_DAYS 
 
       # Installing rsync is needed in order to deploy to GitHub Pages. Without it, the build will fail.
       - name: Install rsync 📚
@@ -159,6 +163,7 @@ jobs:
         with:
           name: mac
           path: build/mac
+          retention-days: $RETENTION_DAYS 
 
   #---------------------------------------------------------------------------- 
   tagged-release:
@@ -217,7 +222,7 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          draft: false
+          draft: true
           prerelease: false
 
       - name: Upload Windows Asset
