@@ -1,5 +1,7 @@
 # ActionRPG
 
+![Godot Export](https://github.com/ktmeaton/ActionRPG/workflows/Godot%20Export/badge.svg)
+
 A repo following the Godot tutorial by [heartgamedev](https://www.heartgamedev.com/).
 
 [Tutorial Playlist](https://www.youtube.com/watch?v=mAbG8Oi-SvQ&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&ab_channel=HeartBeast)
@@ -26,7 +28,7 @@ A repo following the Godot tutorial by [heartgamedev](https://www.heartgamedev.c
 - Install XAMPP to run locally.
 
 
-### Manually Deploy 
+#### Manually Deploy 
 
 ```bash
 cp -r builds/html5/ .. ;
