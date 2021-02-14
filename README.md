@@ -3,9 +3,10 @@
 [Tutorial Playlist](https://www.youtube.com/watch?v=mAbG8Oi-SvQ&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&ab_channel=HeartBeast)
 ## Table of Contents
 
-- [Episode 00](https://github.com/ktmeaton/ActionRPG/blob/master/README.md) - [Checkout](https://github.com/ktmeaton/ActionRPG/tree/a58299c51609ade4d5491ea1708bce5cb898b776)
-- [Episode 01](https://github.com/ktmeaton/ActionRPG/blob/master/docs/Episode_01.md) - [Checkout](https://github.com/ktmeaton/ActionRPG/tree/446b48310e054ee1c254971f32ef92ac929ec9a8) - [Video](https://www.youtube.com/watch?v=mAbG8Oi-SvQ&ab_channel=HeartBeast)
-- [Episode 02](https://github.com/ktmeaton/ActionRPG/blob/master/docs/Episode_02.md) - [Checkout]() - [Video](https://www.youtube.com/watch?v=EQA9MJ5_TxU)
+- [Episode 00](https://github.com/ktmeaton/ActionRPG/blob/master/README.md) - [Checkout](https://github.com/ktmeaton/ActionRPG/tree/a58299c5160)
+- [Episode 01](https://github.com/ktmeaton/ActionRPG/blob/master/docs/Episode_01.md) - [Checkout](https://github.com/ktmeaton/ActionRPG/tree/v0.1.0) - [Video](https://www.youtube.com/watch?v=mAbG8Oi-SvQ&ab_channel=HeartBeast)
+- [Episode 02](https://github.com/ktmeaton/ActionRPG/blob/master/docs/Episode_02.md) - [Checkout](https://github.com/ktmeaton/ActionRPG/tree/v0.2.0) - [Video](https://www.youtube.com/watch?v=EQA9MJ5_TxU)
+- [Episode 03](https://github.com/ktmeaton/ActionRPG/blob/master/docs/Episode_03.md) - [Checkout](https://github.com/ktmeaton/ActionRPG/tree/v0.3.0) - [Video](https://www.youtube.com/watch?v=TQKXU7iSWUU)
 
 ## Build
 
