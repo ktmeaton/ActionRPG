@@ -116,7 +116,7 @@ jobs:
           apt-get update && apt-get install -y rsync
 
       - name: Deploy to GitHub Pages 🚀
-        if: contains(github.ref, "master")
+        if: github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
