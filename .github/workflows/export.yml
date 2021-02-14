@@ -4,14 +4,14 @@ name: Godot Export
 # Workflow conditions
 on:
   push:
-  #  branches:
-  #    - master
-  #    - dev
-  #pull_request:
-  #  branches:
-  #    - '*'
-  #release:
-  #  types: [published]
+    branches:
+      - master
+      - dev
+  pull_request:
+    branches:
+      - '*'
+  release:
+    types: [published]
 #------------------------------------------------------------------------------
 env:
   GODOT_VERSION: 3.2.3
