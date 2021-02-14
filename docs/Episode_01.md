@@ -103,7 +103,35 @@
     - Scene -> 'Player'
     - In the top icons, right of the lock, Select "Make sure the object's children are not selectable."
     - Scene -> 'Player' -> Right Click "Attach Script" -> res://Player/Player.gd -> Create
-    - Add the code from the video.
+    
+    ```python
+    1   # Always extend the node you're passing the script to
+    2   extends KinematicBody2D
+    3  
+    4   # Called when the node enters the scene tree for the first time.
+    5   # Callback functions start with _
+    6   #func _ready():
+    7   #	pass
+    8  
+    9   # Vector2 is an x and y position
+    10  var velocity = Vector2.ZERO
+    11
+    12  # Called every frame. 'delta' is the elapsed time since the previous frame.
+    13  # delta is how long the last frame took
+    14  # _physics_process is a function we're overriding
+    15  func _physics_process(delta):
+    16      var input_vector = Vector2.ZERO
+    17    
+    18      input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+    19      input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+    20    
+    21      if input_vector != Vector2.ZERO:
+    22          velocity = input_vector
+    23      else:
+    24          velocity = Vector2.ZERO
+    25        
+    26      move_and_collide(velocity)
+    ```
 
      ```bash
     git add -A
