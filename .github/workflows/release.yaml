@@ -10,6 +10,9 @@ on:
     tags:
       - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
 #------------------------------------------------------------------------------
+OLD_VER=master
+NEW_VER=dev
+#------------------------------------------------------------------------------
 jobs:
 
   release:
@@ -19,12 +22,7 @@ jobs:
 
       - name: Get commit summary
         run: | 
-          #TODO: find the previous tag somehow right here
-          previousTag=$(git tag --sort=-creatordate | sed -n 2p)
-          echo "previousTag : $previousTag"
-          
-          commitSummary="$(git log $previousTag..${{ github.ref }})"
-          echo "::set-env name=COMMIT_SUMMARY::\"$commitSummary\""
+          git log --abbrev-commit --pretty=oneline ${OLD_VER}..{NEW_VER}
 
       # - name: Checkout code
       #   uses: actions/checkout@v2
