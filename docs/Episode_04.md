@@ -22,3 +22,27 @@
 3. Add the new 'Bush' to the 'World' scene.
 
     - Delete the old Bush, add the new 'Bush' scene.
+
+4. Pros of 'World' being a 2D node.
+
+    - You can move World and all it's child nodes around.
+    - ie. World as a 2D node has a transform property.
+    - You can add scenes (ex. Bush) exactly where you want them. They won't snap back to the origin.
+
+5. Keeping new scenes isolated.
+
+    - You can add a Bush scene to the Player scene.
+    - But it will follow the user around in other scenes.
+    - A better use for that would be furniture inside a house.
+    - This is a powerful way to isolate or connect assets.
+
+6. Add sorting layers.
+
+    - Right click on 'World' -> Change type -> ysort
+    - This sorts child nodes by their y position.
+    - The player can be in front and behind the bush.
+    - Problem: this sorts by the origin. And in the 'Player' scene, the sprite's neck is at the origin.
+    - Select the Player scene, enable selecting children nodes.
+    - Move the Sprite and CollisionShape2D up.
+    - Edit the CollishipShape2D position to 0,0.
+    - Repeat these steps for the Bush scene.

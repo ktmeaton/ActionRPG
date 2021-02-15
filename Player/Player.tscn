@@ -14,10 +14,10 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -9 )
 texture = ExtResource( 2 )
 hframes = 60
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.481903, 9.1701 )
 rotation = -1.5708
 shape = SubResource( 1 )
