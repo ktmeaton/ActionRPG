@@ -59,7 +59,12 @@ fi
 
 # ----------------
 # Notes Header
-if [[ $patch != 0 ]]; then
+
+# If on the head, look at 'next' episode notes
+if [[ $NEW_VER == "HEAD" ]]; then
+  minor=`expr $minor + 1`
+  target_notes=docs/Episode_$minor.md
+elif [[ $patch != 0 ]]; then
   target_notes=docs/Episode_$minor-$patch.md
 else
   target_notes=docs/Episode_$minor.md

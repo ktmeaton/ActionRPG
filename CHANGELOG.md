@@ -2,15 +2,11 @@
 
 ### Notes
 
-1. Save 'Player' node as a scene.
-1. Create a 'Bush' scene.
-1. Add the new 'Bush' to the 'World' scene.
-1. Pros of 'World' being a 2D node.
-1. Keeping new scenes isolated.
-1. Add sorting layers.
+1. Start episode.
 
 ### Commits
 
+* [```05681f1```](https://github.com/ktmeaton/ActionRPG/commit/05681f1) Update Changelog
 * [```c7cb4c2```](https://github.com/ktmeaton/ActionRPG/commit/c7cb4c2) fix typo in CI
 * [```4c5daea```](https://github.com/ktmeaton/ActionRPG/commit/4c5daea) update changelog through CI
 * [```6c7e5c7```](https://github.com/ktmeaton/ActionRPG/commit/6c7e5c7) accomodate patch versions
