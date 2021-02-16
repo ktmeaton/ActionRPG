@@ -164,6 +164,34 @@ jobs:
           retention-days: 7 
 
   #---------------------------------------------------------------------------- 
+  release-notes:
+    name: Release Notes 🍎
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          lfs: true  
+
+      # Compare 2 most recent tags
+      - name: Tagged Release Notes
+        run: |
+          scripts/notes_release.sh `git tag | tail -n 1` HEAD > release-notes.md
+
+      # No tag, just check against head
+      - name: Unagged Release Notes
+        run: |
+          `git tag | tail -n2 | head -n1` `git tag | tail -n1` > release-notes.md   
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Release Notes
+          path: release-notes.md
+          retention-days: 7                        
+
+  #---------------------------------------------------------------------------- 
   tagged-release:
     name: Tagged Release
     needs: [export-windows, export-linux, export-web, export-mac]

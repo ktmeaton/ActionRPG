@@ -5,6 +5,30 @@ OLD_VER=$1
 NEW_VER=$2
 BASE="https://github.com/ktmeaton/ActionRPG/commit"
 
+# ----------------
+# PR info
+
+# Retieve PR hashes
+arr_pr_commits=( `git ls-remote origin 'pull/*/head' | awk '{print substr($1,1,7)}' | tr '\n' ' ' ` )
+pr_id=( `git ls-remote origin 'pull/*/head' | cut -f 2 | cut -d "/" -f 3 | tr '\n' ' ' ` )
+num_pr=${#arr_pr_commits[@]}
+
+# Retrieve commit hashes
+arr_new_ver_commits=( $(scripts/notes_commits.sh ${OLD_VER} ${NEW_VER} | cut -d '`' -f 4 | tr '\n' ' ') )
+
+# Search for matching PR
+for commit in ${arr_new_ver_commits[@]}; do
+  for ((i=0; i<num_pr; i++)); do
+    pr=${arr_pr_commits[$i]}
+    if [[ $pr == $commit ]]; then
+      ver_pr=${pr_id[$i]};
+    fi;
+  done
+done
+
+# ----------------
+# Version Parsing
+
 # Check if NEW_VER is head
 if [[ ${NEW_VER} == "HEAD" ]]; then
   old_num=`echo ${OLD_VER} | cut -d "." -f 2`;
@@ -21,22 +45,28 @@ if [[ ${new_num} -le 10 ]]; then
   new_ep="0${new_ep}"
 fi
 
+# ----------------
+# Episode Header
 echo "## Episode ${new_ep}"
-echo ""
+echo
 
-echo "### [Pull Request](https://github.com/ktmeaton/ActionRPG/pull/${new_num})"
-echo ""
+# ----------------
+# PR Header
+if [[ ${NEW_VER} != "HEAD" && $ver_pr ]]; then
+  echo "### [Pull Request](https://github.com/ktmeaton/ActionRPG/pull/${ver_pr})"
+  echo
+fi
 
+# ----------------
+# Notes Header
 echo "### Notes"
-echo ""
-scripts/notes_major.sh docs/Episode_${new_ep}.md
-echo ""
+echo
+grep -r '[0-9]\. ' docs/Episode_${new_ep}.md
+echo
 
-git log --pretty=oneline --abbrev-commit ${OLD_VER}..${NEW_VER} | \
-  while read line;
-  do
-    hash=`echo $line | cut -d " " -f 1`
-    msg=`echo $line | sed "s/$hash //g"`
-    echo -e "* \`\`\`[$hash]($BASE/$hash)\`\`\` $msg";
-  done;
- 
+# ----------------
+# Commits Header
+echo "### Commits"
+echo
+scripts/notes_commits.sh ${OLD_VER} ${NEW_VER}
+echo  
