@@ -19,7 +19,6 @@ env:
   GODOT_VERSION: 3.2.3
   PROJECT_PATH: .
   EXPORT_NAME: ActionRPG
-  RETENTION_DAYS: 7
 #------------------------------------------------------------------------------
 jobs:
   #----------------------------------------------------------------------------
@@ -54,7 +53,7 @@ jobs:
         with:
           name: windows
           path: build/windows
-          retention-days: $RETENTION_DAYS
+          retention-days: 7
   #----------------------------------------------------------------------------
   export-linux:
     name: Linux Export 🐧
@@ -86,7 +85,7 @@ jobs:
         with:
           name: linux
           path: build/linux
-          retention-days: $RETENTION_DAYS          
+          retention-days: 7          
   #----------------------------------------------------------------------------
   export-web:
     name: Web Export 💠
@@ -117,7 +116,7 @@ jobs:
         with:
           name: html5
           path: build/html5
-          retention-days: $RETENTION_DAYS 
+          retention-days: 7 
 
       # Installing rsync is needed in order to deploy to GitHub Pages. Without it, the build will fail.
       - name: Install rsync 📚
@@ -163,7 +162,7 @@ jobs:
         with:
           name: mac
           path: build/mac
-          retention-days: $RETENTION_DAYS 
+          retention-days: 7 
 
   #---------------------------------------------------------------------------- 
   tagged-release:
