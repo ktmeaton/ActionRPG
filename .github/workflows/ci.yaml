@@ -179,7 +179,7 @@ jobs:
         run: |
           pwd;
           ls -l ;
-          git log head;
+          git log | head;
           git tag;
 
       # No tag, just check against head
