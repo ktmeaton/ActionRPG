@@ -166,7 +166,7 @@ jobs:
   #----------------------------------------------------------------------------   
   release-notes:
     name: Release Notes 📰
-    #if: startsWith(github.ref, 'refs/tags/v')
+    if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
 
     steps:
@@ -175,18 +175,13 @@ jobs:
         with:
           lfs: true  
           fetch-depth: 0
-  
-      - name: Update Changelog
-        run: scripts/changelog_update.sh
 
       # Check 2 most recent tags, overwrites
-      - name: Tagged Release Notes
-        if: startsWith(github.ref, 'refs/tags/v')      
+      - name: Tagged Release Notes    
         run: |
           scripts/notes_release.sh `git tag | tail -n2 | head -n1` `git tag | tail -n1` > release-notes.md           
 
-      - name: Upload Artifact
-        if: github.ref != 'refs/heads/dev'          
+      - name: Upload Artifact          
         uses: actions/upload-artifact@v2
         with:
           name: Release Notes
