@@ -174,15 +174,16 @@ jobs:
         with:
           lfs: true  
 
-      # Compare 2 most recent tags
-      - name: Tagged Release Notes
-        run: |
-          scripts/notes_release.sh `git tag | tail -n 1` HEAD > release-notes.md
-
       # No tag, just check against head
       - name: Unagged Release Notes
         run: |
-          `git tag | tail -n2 | head -n1` `git tag | tail -n1` > release-notes.md   
+          scripts/notes_release.sh `git tag | tail -n2 | head -n1` `git tag | tail -n1` > release-notes.md   
+
+      # Compare 2 most recent tags (overwrites)
+      - name: Tagged Release Notes
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          scripts/notes_release.sh `git tag | tail -n 1` HEAD > release-notes.md
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
