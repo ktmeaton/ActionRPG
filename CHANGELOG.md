@@ -6,6 +6,15 @@
 
 ### Commits
 
+
+## Episode 4.1
+
+### Commits
+
+* [```713cab1```](https://github.com/ktmeaton/ActionRPG/commit/713cab1) fix download artifacts name for release notes
+* [```59f2dc3```](https://github.com/ktmeaton/ActionRPG/commit/59f2dc3) release notes after build and before create
+* [```69c265c```](https://github.com/ktmeaton/ActionRPG/commit/69c265c) make release notes conditional on v tag
+* [```353c1ca```](https://github.com/ktmeaton/ActionRPG/commit/353c1ca) if on HEAD read next episodes notes
 * [```05681f1```](https://github.com/ktmeaton/ActionRPG/commit/05681f1) Update Changelog
 * [```c7cb4c2```](https://github.com/ktmeaton/ActionRPG/commit/c7cb4c2) fix typo in CI
 * [```4c5daea```](https://github.com/ktmeaton/ActionRPG/commit/4c5daea) update changelog through CI
