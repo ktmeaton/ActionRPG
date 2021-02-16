@@ -49,10 +49,11 @@ jobs:
 
       - name: Upload Artifact
         #if: github.ref == 'refs/heads/master'
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: windows
           path: build/windows
+          retention-days: 7
   #----------------------------------------------------------------------------
   export-linux:
     name: Linux Export 🐧
@@ -80,10 +81,11 @@ jobs:
 
       - name: Upload Artifact
         #if: github.ref == 'refs/heads/master'
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: linux
           path: build/linux
+          retention-days: 7          
   #----------------------------------------------------------------------------
   export-web:
     name: Web Export 💠
@@ -110,10 +112,11 @@ jobs:
 
       - name: Upload Artifact
         #if: github.ref == 'refs/heads/master'
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: html5
           path: build/html5
+          retention-days: 7 
 
       # Installing rsync is needed in order to deploy to GitHub Pages. Without it, the build will fail.
       - name: Install rsync 📚
@@ -155,10 +158,11 @@ jobs:
 
       - name: Upload Artifact
         #if: github.ref == 'refs/heads/master'
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: mac
           path: build/mac
+          retention-days: 7 
 
   #---------------------------------------------------------------------------- 
   tagged-release:
@@ -217,7 +221,7 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          draft: false
+          draft: true
           prerelease: false
 
       - name: Upload Windows Asset
