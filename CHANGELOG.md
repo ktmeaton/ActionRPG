@@ -11,6 +11,8 @@
 
 ### Commits
 
+* [```c7cb4c2```](https://github.com/ktmeaton/ActionRPG/commit/c7cb4c2) fix typo in CI
+* [```4c5daea```](https://github.com/ktmeaton/ActionRPG/commit/4c5daea) update changelog through CI
 * [```6c7e5c7```](https://github.com/ktmeaton/ActionRPG/commit/6c7e5c7) accomodate patch versions
 * [```0646e46```](https://github.com/ktmeaton/ActionRPG/commit/0646e46) remove 0 prefix to episodes
 * [```f349e44```](https://github.com/ktmeaton/ActionRPG/commit/f349e44) don't upload artifacts on dev branch
