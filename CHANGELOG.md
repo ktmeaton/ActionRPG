@@ -1,12 +1,18 @@
 ## Development
 
+### Notes
+
+1. Save 'Player' node as a scene.
+1. Create a 'Bush' scene.
+1. Add the new 'Bush' to the 'World' scene.
+1. Pros of 'World' being a 2D node.
+1. Keeping new scenes isolated.
+1. Add sorting layers.
+
 ### Commits
 
-
-## Episode 4.1
-
-### Commits
-
+* [```6c7e5c7```](https://github.com/ktmeaton/ActionRPG/commit/6c7e5c7) accomodate patch versions
+* [```0646e46```](https://github.com/ktmeaton/ActionRPG/commit/0646e46) remove 0 prefix to episodes
 * [```f349e44```](https://github.com/ktmeaton/ActionRPG/commit/f349e44) don't upload artifacts on dev branch
 * [```470d072```](https://github.com/ktmeaton/ActionRPG/commit/470d072) reverse tagged and untagged release notes
 * [```ced6b98```](https://github.com/ktmeaton/ActionRPG/commit/ced6b98) set fetch depth 0 for release notes

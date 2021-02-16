@@ -20,7 +20,7 @@ env:
   PROJECT_PATH: .
   EXPORT_NAME: ActionRPG
 #------------------------------------------------------------------------------
-jobs:
+jobs:      
   #----------------------------------------------------------------------------
   export-windows:
     name: Windows Export 🏢
@@ -162,11 +162,39 @@ jobs:
         with:
           name: mac
           path: build/mac
-          retention-days: 7 
-
+          retention-days: 7                  
   #---------------------------------------------------------------------------- 
+  changelog-update:
+    name: Update Changelog ✏️
+    #if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          lfs: true  
+          fetch-depth: 0 
+      
+      - name: Update Changelog
+        run: scripts/changelog_update.sh  
+
+      - name: Commit files
+          run: |
+            git add CHANGELOG.md
+            git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git commit -m "Update Changelog"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}          
+  #----------------------------------------------------------------------------   
   release-notes:
-    name: Release Notes 🍎
+    name: Release Notes 📰
+    #if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
 
     steps:
@@ -176,10 +204,8 @@ jobs:
           lfs: true  
           fetch-depth: 0
   
-      # No tag, just check against head
-      - name: Untagged Release Notes
-        run: |
-          scripts/notes_release.sh `git tag | tail -n 1` HEAD > release-notes.md
+      - name: Update Changelog
+        run: scripts/changelog_update.sh
 
       # Check 2 most recent tags, overwrites
       - name: Tagged Release Notes
@@ -193,11 +219,10 @@ jobs:
         with:
           name: Release Notes
           path: release-notes.md
-          retention-days: 7                        
-
+          retention-days: 7             
   #---------------------------------------------------------------------------- 
   tagged-release:
-    name: Tagged Release
+    name: Tagged Release 
     needs: [export-windows, export-linux, export-web, export-mac, release-notes]
     if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
