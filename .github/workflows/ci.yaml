@@ -48,7 +48,7 @@ jobs:
           echo "::set-output name=test::hello"
 
       - name: Upload Artifact
-        if: github.ref == 'refs/heads/master'
+        if: github.ref != 'refs/heads/dev'
         uses: actions/upload-artifact@v2
         with:
           name: windows
@@ -80,7 +80,7 @@ jobs:
           godot -v --export "Linux/X11" ./build/linux/$EXPORT_NAME.x86_64
 
       - name: Upload Artifact
-        #if: github.ref == 'refs/heads/master'
+        if: github.ref != 'refs/heads/dev'
         uses: actions/upload-artifact@v2
         with:
           name: linux
@@ -111,6 +111,7 @@ jobs:
           godot -v --export "HTML5" ./build/html5/index.html
 
       - name: Upload Artifact
+        if: github.ref != 'refs/heads/dev'      
         uses: actions/upload-artifact@v2
         with:
           name: html5
@@ -156,7 +157,7 @@ jobs:
           godot -v --export "Mac OSX" ./build/mac/$EXPORT_NAME.zip
 
       - name: Upload Artifact
-        #if: github.ref == 'refs/heads/master'
+        if: github.ref != 'refs/heads/dev'
         uses: actions/upload-artifact@v2
         with:
           name: mac
@@ -174,15 +175,6 @@ jobs:
         with:
           lfs: true  
           fetch-depth: 0
-
-      # Check info available
-      - name: Test
-        run: |
-          pwd;
-          ls -l ;
-          git log | head;
-          git tag | head;
-
   
       # No tag, just check against head
       - name: Untagged Release Notes
@@ -196,6 +188,7 @@ jobs:
           scripts/notes_release.sh `git tag | tail -n2 | head -n1` `git tag | tail -n1` > release-notes.md           
 
       - name: Upload Artifact
+        if: github.ref != 'refs/heads/dev'          
         uses: actions/upload-artifact@v2
         with:
           name: Release Notes
