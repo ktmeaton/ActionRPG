@@ -8,7 +8,7 @@
         - Position: x=0, y=0
     - Moving the player in the base scene ('Player') will update the position in other scenes. Moving the player in the 'World' scene will not do that.
 
-2. Create a 'Bush' scene.
+1. Create a 'Bush' scene.
 
     - '+' icon in tabs -> Other Node -> StaticBody2D
     - Rename the new node to 'Bush'
@@ -19,24 +19,24 @@
         - Resize to bottom of bush.
     - Save the scene as ```World/Bush.tscn```
 
-3. Add the new 'Bush' to the 'World' scene.
+1. Add the new 'Bush' to the 'World' scene.
 
     - Delete the old Bush, add the new 'Bush' scene.
 
-4. Pros of 'World' being a 2D node.
+1. Pros of 'World' being a 2D node.
 
     - You can move World and all it's child nodes around.
     - ie. World as a 2D node has a transform property.
     - You can add scenes (ex. Bush) exactly where you want them. They won't snap back to the origin.
 
-5. Keeping new scenes isolated.
+1. Keeping new scenes isolated.
 
     - You can add a Bush scene to the Player scene.
     - But it will follow the user around in other scenes.
     - A better use for that would be furniture inside a house.
     - This is a powerful way to isolate or connect assets.
 
-6. Add sorting layers.
+1. Add sorting layers.
 
     - Right click on 'World' -> Change type -> ysort
     - This sorts child nodes by their y position.
