@@ -185,7 +185,7 @@ jobs:
       - name: Upload Artifact          
         uses: actions/upload-artifact@v2
         with:
-          name: Release Notes
+          name: release-notes
           path: release-notes.md
           retention-days: 7             
   #---------------------------------------------------------------------------- 
@@ -200,7 +200,7 @@ jobs:
       - name: Download Release Notes
         uses: actions/download-artifact@v2
         with:
-          name: release-notes.md
+          name: release-notes
 
       - name: Download Windows Artifact
         uses: actions/download-artifact@v2
@@ -253,6 +253,7 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: true
           prerelease: false
+          body_path: release-notes.md
 
       - name: Upload Windows Asset
         id: upload-windows-asset 
