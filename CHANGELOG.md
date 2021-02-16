@@ -1,15 +1,25 @@
-## Episode 05
-
-### Notes
-
+## Development
 
 ### Commits
 
+
+## Episode 4.1
+
+### Commits
+
+* [```f349e44```](https://github.com/ktmeaton/ActionRPG/commit/f349e44) don't upload artifacts on dev branch
+* [```470d072```](https://github.com/ktmeaton/ActionRPG/commit/470d072) reverse tagged and untagged release notes
+* [```ced6b98```](https://github.com/ktmeaton/ActionRPG/commit/ced6b98) set fetch depth 0 for release notes
+* [```4df093a```](https://github.com/ktmeaton/ActionRPG/commit/4df093a) fix typo in head command
+* [```4d4c2df```](https://github.com/ktmeaton/ActionRPG/commit/4d4c2df) decipher git status in CI
+* [```bb681e6```](https://github.com/ktmeaton/ActionRPG/commit/bb681e6) only run tagged release notes if v tag
+* [```d220938```](https://github.com/ktmeaton/ActionRPG/commit/d220938) add execute permissions to all scripts
+* [```1ecc38e```](https://github.com/ktmeaton/ActionRPG/commit/1ecc38e) generate release notes in CI
 * [```3104767```](https://github.com/ktmeaton/ActionRPG/commit/3104767) add scripts to auto generate release notes and changelog
 * [```df01659```](https://github.com/ktmeaton/ActionRPG/commit/df01659) reformat commit history notes
 * [```d01cee3```](https://github.com/ktmeaton/ActionRPG/commit/d01cee3) prepare for Episode 05
 
-## Episode 04
+## Episode 4.0
 
 ### [Pull Request](https://github.com/ktmeaton/ActionRPG/pull/3)
 
@@ -33,7 +43,7 @@
 * [```cdfaf3b```](https://github.com/ktmeaton/ActionRPG/commit/cdfaf3b) start Episode 04
 * [```ffae9d4```](https://github.com/ktmeaton/ActionRPG/commit/ffae9d4) add expiry to artifacts and set release to draft mode
 
-## Episode 03
+## Episode 3.0
 
 ### [Pull Request](https://github.com/ktmeaton/ActionRPG/pull/2)
 
@@ -54,7 +64,7 @@
 * [```015bdfe```](https://github.com/ktmeaton/ActionRPG/commit/015bdfe) use commit tags for checkout link
 * [```d843d1b```](https://github.com/ktmeaton/ActionRPG/commit/d843d1b) add bullets and hyphens to commit history
 
-## Episode 02
+## Episode 2.0
 
 ### [Pull Request](https://github.com/ktmeaton/ActionRPG/pull/1)
 
@@ -67,7 +77,7 @@
 * [```6ba391d```](https://github.com/ktmeaton/ActionRPG/commit/6ba391d) Merge pull request #1 from ktmeaton/dev
 * [```932fe76```](https://github.com/ktmeaton/ActionRPG/commit/932fe76) finish Episode 02
 
-## Episode 01
+## Episode 1.0
 
 ### Notes
 

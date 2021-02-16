@@ -28,41 +28,49 @@ done
 
 # ----------------
 # Version Parsing
-
-# Check if NEW_VER is head
-if [[ ${NEW_VER} == "HEAD" ]]; then
-  old_num=`echo ${OLD_VER} | cut -d "." -f 2`;
-  new_num=`expr ${old_num} + 1`;
+if [[ $NEW_VER == "HEAD" ]]; then
+  target_ver=$OLD_VER
 else
-  new_num=`echo ${NEW_VER} | cut -d "." -f 2`;
+  target_ver=$NEW_VER
 fi
 
-# Have a separate var for string formatting episode
-new_ep=${new_num};
+arr_ver=(`echo ${target_ver} | sed 's/v//g'  | tr '.' ' '`)
+major=${arr_ver[0]}
+minor=${arr_ver[1]}
+patch=${arr_ver[2]}
 
-# Add a 0 for formatting under ver 10
-if [[ ${new_num} -le 10 ]]; then
-  new_ep="0${new_ep}"
+if [[ $NEW_VER == "HEAD" ]]; then
+  ep="Development" 
+else
+  ep="Episode $minor.$patch" 
 fi
 
 # ----------------
 # Episode Header
-echo "## Episode ${new_ep}"
+echo "## ${ep}"
 echo
 
 # ----------------
 # PR Header
-if [[ ${NEW_VER} != "HEAD" && $ver_pr ]]; then
+if [[ $ver_pr ]]; then
   echo "### [Pull Request](https://github.com/ktmeaton/ActionRPG/pull/${ver_pr})"
   echo
 fi
 
 # ----------------
 # Notes Header
-echo "### Notes"
-echo
-grep -r '[0-9]\. ' docs/Episode_${new_ep}.md
-echo
+if [[ $patch != 0 ]]; then
+  target_notes=docs/Episode_$minor-$patch.md
+else
+  target_notes=docs/Episode_$minor.md
+fi
+
+if [[ -f $target_notes ]]; then
+  echo "### Notes"
+  echo
+  grep -r '[0-9]\. ' $target_notes
+  echo
+fi
 
 # ----------------
 # Commits Header
