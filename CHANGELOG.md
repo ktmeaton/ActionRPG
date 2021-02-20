@@ -1,13 +1,22 @@
+# CHANGELOG
+
 ## Development
 
-### Notes
+### Pull Requests
 
-1. Start episode.
+* [```pull/4```](https://github.com/ktmeaton/ActionRPG/pull/4) Episode 4.1
 
 ### Commits
 
+* [```f7b22bb```](https://github.com/ktmeaton/ActionRPG/commit/f7b22bb) add submodule autologs
+* [```13d248d```](https://github.com/ktmeaton/ActionRPG/commit/13d248d) remove old scripts
+* [```54f7834```](https://github.com/ktmeaton/ActionRPG/commit/54f7834) Merge pull request #4 from ktmeaton/dev
+* [```0bae4a5```](https://github.com/ktmeaton/ActionRPG/commit/0bae4a5) update Changelog after v0.4.1
 
-## Episode 4.1
+## v0.4.1
+
+### Pull Requests
+
 
 ### Commits
 
@@ -32,18 +41,11 @@
 * [```df01659```](https://github.com/ktmeaton/ActionRPG/commit/df01659) reformat commit history notes
 * [```d01cee3```](https://github.com/ktmeaton/ActionRPG/commit/d01cee3) prepare for Episode 05
 
-## Episode 4.0
+## v0.4.0
 
-### [Pull Request](https://github.com/ktmeaton/ActionRPG/pull/3)
+### Pull Requests
 
-### Notes
-
-1. Save 'Player' node as a scene.
-1. Create a 'Bush' scene.
-1. Add the new 'Bush' to the 'World' scene.
-1. Pros of 'World' being a 2D node.
-1. Keeping new scenes isolated.
-1. Add sorting layers.
+* [```pull/3```](https://github.com/ktmeaton/ActionRPG/pull/3) Episode 04
 
 ### Commits
 
@@ -56,19 +58,11 @@
 * [```cdfaf3b```](https://github.com/ktmeaton/ActionRPG/commit/cdfaf3b) start Episode 04
 * [```ffae9d4```](https://github.com/ktmeaton/ActionRPG/commit/ffae9d4) add expiry to artifacts and set release to draft mode
 
-## Episode 3.0
+## v0.3.0
 
-### [Pull Request](https://github.com/ktmeaton/ActionRPG/pull/2)
+### Pull Requests
 
-### Notes
-
-1. Fix bug where clamping is dependent on delta.
-2. Use the move_toward() function for calculating all velocties.
-3. Reoptimize speed.
-4. Setup collisions.
-5. Test collisions.
-6. Optimize collision physics.
-7. Fix warning about fonts.
+* [```pull/2```](https://github.com/ktmeaton/ActionRPG/pull/2) Episode 03
 
 ### Commits
 
@@ -77,30 +71,21 @@
 * [```015bdfe```](https://github.com/ktmeaton/ActionRPG/commit/015bdfe) use commit tags for checkout link
 * [```d843d1b```](https://github.com/ktmeaton/ActionRPG/commit/d843d1b) add bullets and hyphens to commit history
 
-## Episode 2.0
+## v0.2.0
 
-### [Pull Request](https://github.com/ktmeaton/ActionRPG/pull/1)
+### Pull Requests
 
-### Notes
-
-1. Smooth Movement
+* [```pull/1```](https://github.com/ktmeaton/ActionRPG/pull/1) Episode 02
 
 ### Commits
 
 * [```6ba391d```](https://github.com/ktmeaton/ActionRPG/commit/6ba391d) Merge pull request #1 from ktmeaton/dev
 * [```932fe76```](https://github.com/ktmeaton/ActionRPG/commit/932fe76) finish Episode 02
 
-## Episode 1.0
+## v0.1.0
 
-### Notes
+### Pull Requests
 
-1. Create Godot Project.
-1. Setup Git Repository.
-1. Configure Project for 2D Pixel Art.
-1. Import Assets.
-1. Configure Scene Resolution and Scaling.
-1. Create a Character.
-1. Implement Character Movement.
 
 ### Commits
 
