@@ -1,6 +1,6 @@
 # ActionRPG
 
-[Tutorial Playlist](https://www.youtube.com/watch?v=mAbG8Oi-SvQ&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&ab_channel=HeartBeast)
+[@uheartbeast Tutorial Playlist](https://www.youtube.com/watch?v=mAbG8Oi-SvQ&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&ab_channel=HeartBeast)
 ## Table of Contents
 
 - [x] [Episode 00](https://github.com/ktmeaton/ActionRPG/blob/master/README.md) - [Checkout](https://github.com/ktmeaton/ActionRPG/tree/a58299c5160)
