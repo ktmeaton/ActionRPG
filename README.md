@@ -10,17 +10,7 @@
 - [x] [Episode 04](https://github.com/ktmeaton/ActionRPG/blob/master/docs/Episode_4.md) - [v0.4.0](https://github.com/ktmeaton/ActionRPG/tree/v0.4.0) - [Video](https://www.youtube.com/watch?v=UfKMgHbaGow)
 - [ ] [Episode 05](https://github.com/ktmeaton/ActionRPG/blob/master/docs/Episode_5.md) - [Checkout](https://github.com/ktmeaton/ActionRPG/tree/v0.5.0) - [Video](https://www.youtube.com/watch?v=wX145eoLFSM)
 
-## Build
+## Credits
 
-### Windows
-
-- Warning: 0.4 GB Download.
-- Project -> Export -> Add... -> Windows Desktop
-- Manage Export Templates -> Download -> Official 3.2.3 [HTTPS]
-- Export Path: ```builds/win/ActionRPG.exe```
-
-### HTML5
-
-- Project -> Export -> Add... -> HTML5
-- Export Path: ```builds/html5/ActionRPG.html```
-- Install XAMPP to run locally.
+Artistic Content: [@uheartbeast](https://github.com/uheartbeast)  
+Github Repo: [@ktmeaton](https://github.com/ktmeaton)
