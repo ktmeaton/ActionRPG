@@ -26,3 +26,30 @@
     - IdleUp: 6
     - IdleLeft: 12
     - IdleDown: 18
+
+1. Autplay an animation on game load.
+
+    - In animation dropdown, select 'RunRight'
+    - Select the button 'Autoplay on Load'
+
+1. Create an intial animation implementation.
+
+    - Open ```Player/Player.gd```
+    - Initialize the AnimationPlayer
+
+    ```python
+    11  onready var animationPlayer = $AnimationPlayer
+    ```
+    - Initialize node objects in ready, because otherwise they may not be "ready" yet :)
+    - OR! Use the special onready variable type.
+    - Implement run while moving and idle when not.
+
+    ```python
+    24  if input_vector.x > 0:
+    25      animationPlayer.play("RunRight")
+    26  else:
+            animationPlayer.play("RunLeft")
+    ...
+    30  animationPlayer.play("IdleRight")
+    ```
+    ```
