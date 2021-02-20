@@ -8,9 +8,12 @@ A repo following the Godot tutorial by [heartgamedev](https://www.heartgamedev.c
 
 ## Table of Contents
 
-- [Episode 00](https://github.com/ktmeaton/ActionRPG/blob/master/README.md) - [Checkout](https://github.com/ktmeaton/ActionRPG/tree/a58299c51609ade4d5491ea1708bce5cb898b776)
-- [Episode 01](https://github.com/ktmeaton/ActionRPG/blob/master/docs/Episode_01.md) - [Checkout](https://github.com/ktmeaton/ActionRPG/tree/446b48310e054ee1c254971f32ef92ac929ec9a8) - [Video](https://www.youtube.com/watch?v=mAbG8Oi-SvQ&ab_channel=HeartBeast)
-- [Episode 02](https://github.com/ktmeaton/ActionRPG/blob/master/docs/Episode_02.md) - [Checkout]() - [Video](https://www.youtube.com/watch?v=EQA9MJ5_TxU)
+- [x] [Episode 00](https://github.com/ktmeaton/ActionRPG/blob/master/README.md) - [Checkout](https://github.com/ktmeaton/ActionRPG/tree/a58299c5160)
+- [x] [Episode 01](https://github.com/ktmeaton/ActionRPG/blob/master/docs/Episode_1.md) - [Checkout](https://github.com/ktmeaton/ActionRPG/tree/v0.1.0) - [Video](https://www.youtube.com/watch?v=mAbG8Oi-SvQ&ab_channel=HeartBeast)
+- [x] [Episode 02](https://github.com/ktmeaton/ActionRPG/blob/master/docs/Episode_2.md) - [Checkout](https://github.com/ktmeaton/ActionRPG/tree/v0.2.0) - [Video](https://www.youtube.com/watch?v=EQA9MJ5_TxU)
+- [x] [Episode 03](https://github.com/ktmeaton/ActionRPG/blob/master/docs/Episode_3.md) - [v0.3.0](https://github.com/ktmeaton/ActionRPG/tree/v0.3.0) - [Video](https://www.youtube.com/watch?v=TQKXU7iSWUU)
+- [x] [Episode 04](https://github.com/ktmeaton/ActionRPG/blob/master/docs/Episode_4.md) - [v0.4.0](https://github.com/ktmeaton/ActionRPG/tree/v0.4.0) - [Video](https://www.youtube.com/watch?v=UfKMgHbaGow)
+- [ ] [Episode 05](https://github.com/ktmeaton/ActionRPG/blob/master/docs/Episode_5.md) - [Checkout](https://github.com/ktmeaton/ActionRPG/tree/v0.5.0) - [Video](https://www.youtube.com/watch?v=wX145eoLFSM)
 
 ## Build
 
