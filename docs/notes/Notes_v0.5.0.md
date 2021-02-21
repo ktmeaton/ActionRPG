@@ -6,7 +6,7 @@
 
     - Animation -> New -> 'RunRight'
     - Change the total animation time from 1 to 0.6
-    - Select 'Sprite', change Frame:0 to Frame:1. Press the key button.
+    - Select 'Sprite', change Frame:0 to Frame:1 Press the key button.
     - (Do not select bezier curves) Select Create
     - Move the animation slider so it rests at 0.1
     - Change to Frame:2, key it.
