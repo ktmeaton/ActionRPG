@@ -12,6 +12,9 @@ onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
 
+func _ready():
+	animationTree.active = true
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 # delta is how long the last frame took
 # _physics_process is a function we're overriding
