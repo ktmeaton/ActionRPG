@@ -60,4 +60,23 @@
         Step: 16 x 16
     - Redraw region to outline.
     - If we you click on Tilemap in nodes, you can see the new tileset.
+
+1. Configure Tilemap
+
+    - Click on Tileset again
+    - Click on DirtTileset
+    - Click window to select Region tab
+    - Selected Tile:
+        - Subtile Size: 16 x 16
+        - Autotile Bitmask Mode: 3x3 (minimal)
+ 
+ 1. Draw the tile bitmask:
+    
+    - ![Dirt Bitmask](../images/dirt-tilemap.jpg)
+
+1. Place the autotiles
+
+    - Select the TileMap node.
+    - Select the Dirt tileset.
+    - Draw!
     
