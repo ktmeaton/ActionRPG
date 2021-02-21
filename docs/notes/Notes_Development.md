@@ -74,3 +74,11 @@
     - Access to the AnimationState is needed to set the animation.
     - Set the animation state using the ```travel``` function.
 
+
+1. Make the run animations directionally consistent.
+
+    - To prioritze a direction, change the triangle shapes.
+    - AnimationTree -> Idle -> Blendspace
+    - To priortize Left and Right over up and down:
+        - (x:0, y:1) -> (x:0, y:1.1)
+
