@@ -1,4 +1,4 @@
-# Development
+# Episode 6
 
 1. In the Player scene, add a new child node ```AnimationTree```.
 

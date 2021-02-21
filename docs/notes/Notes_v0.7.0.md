@@ -1,4 +1,4 @@
-# Development
+# Episode 7
 
 1. Change the World node back to a Node2D.
 
