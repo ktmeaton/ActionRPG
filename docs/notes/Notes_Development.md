@@ -10,3 +10,10 @@
     - AttackLeft: 32,33,34,35
     - AttackUp: 28,29,30,31
     - AttackRight: 24,25,26,27
+
+1. Create a state machine in the Player script.
+
+1. Add wasd to Input Map
+
+    - Project -> Project Settings -> Tab Input Map
+    - ui_left -> + Key -> 'w'
