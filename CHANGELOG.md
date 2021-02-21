@@ -4,7 +4,51 @@
 
 ### Commits
 
+## v0.7.0
+
+### Notes
+
+1. Change the World node back to a Node2D.
+1. Add a new ysort node as a child of World.
+1. Delete the StaticBody2D.
+1. Option 1) Add a Sprite childnode to world named "Background"
+1. Make the GrassBackground sprite repeat.
+1. Option 2) Add a TextureRect childnode to world named "TextureRectBackground".
+1. Create a Tilemap child note of World.
+1. Configure Tilemap
+ 1. Draw the tile bitmask:
+1. Place the autotiles
+1. Change the dirtmap tile icon.
+
+### Pull Requests
+
+* [```pull/7```](https://github.com/ktmeaton/ActionRPG/pull/7) Episode 7
+
+### Commits
+
+* [```e79873b```](https://github.com/ktmeaton/ActionRPG/commit/e79873b) Merge pull request #7 from ktmeaton/dev
+* [```9080ad4```](https://github.com/ktmeaton/ActionRPG/commit/9080ad4) change the dirt tileset icon
+* [```03e33de```](https://github.com/ktmeaton/ActionRPG/commit/03e33de) create the dirt bitmap and paint the scene
+* [```105e1b8```](https://github.com/ktmeaton/ActionRPG/commit/105e1b8) create a tilemap and dirt tileset
+* [```e5c32de```](https://github.com/ktmeaton/ActionRPG/commit/e5c32de) Create the grass background sprite node
+* [```d9c3a1b```](https://github.com/ktmeaton/ActionRPG/commit/d9c3a1b) prep for Episode 7
+* [```4e0834d```](https://github.com/ktmeaton/ActionRPG/commit/4e0834d) Merge pull request #6 from ktmeaton/dev
+* [```374582b```](https://github.com/ktmeaton/ActionRPG/commit/374582b) update CHANGELOG for Episode 6
+
 ## v0.6.0
+
+### Notes
+
+1. In the Player scene, add a new child node ```AnimationTree```.
+1. Add animations to the tree (test)
+1. Add an Idle BlendSpace for multiple directions.
+1. Create a Run Blendspace
+1. Create Transition between Idle and Run (both ways)
+1. Connect AnimationTree to Player script.
+1. Set an animation to play on load.
+1. Disable RunRight auto animation.
+1. Set the animation state
+1. Make the run animations directionally consistent.
 
 ### Pull Requests
 
