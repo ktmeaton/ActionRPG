@@ -16,7 +16,7 @@
     - SwitchMode: At end
     - Delete all animations boxes and transitions.
 
-1. Add a BlendSpace for multiple directions.
+1. Add an Idle BlendSpace for multiple directions.
 
     - Add BlendSpace2D and Rename to "Idle"
     - Click the pencil edit icon
@@ -30,9 +30,19 @@
         - Dots are for discrete states/frames.
     - Go back to the root and hit play on Idle.
     - Click the button "Set the blending position in space" and move the point around.
-
-1. Setup parameters for the BlendSpace
-
     - Click the AnimationTree Node
     - Inspector -> Parameters -> Idle:
         - Blend Position: 0,0
+
+1. Create a Run Blendspace
+
+    - Click Play
+    - Click "Create Points" button -> Add Animation
+        - (x:1, y:0): RunLeft
+        - (x:0, y:1): RunDown
+        - (x:1, y:0) RunRight
+        - (x:0, y:-1) RunUp
+    - Blend: Dots
+    - Click the AnimationTree Node
+    - Inspector -> Parameters -> Run:
+        - Blend Position: 0,0    
