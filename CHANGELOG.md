@@ -4,6 +4,23 @@
 
 ### Commits
 
+## v0.6.0
+
+### Pull Requests
+
+* [```pull/6```](https://github.com/ktmeaton/ActionRPG/pull/6) Episode 6
+
+### Commits
+
+* [```244ad6e```](https://github.com/ktmeaton/ActionRPG/commit/244ad6e) finish Episode 6
+* [```b8c1954```](https://github.com/ktmeaton/ActionRPG/commit/b8c1954) prioritize L-R anim over U-D anim
+* [```9213f04```](https://github.com/ktmeaton/ActionRPG/commit/9213f04) implement run and idle anims in player script
+* [```429cd37```](https://github.com/ktmeaton/ActionRPG/commit/429cd37) create a blendspace for run animations
+* [```6f6e9df```](https://github.com/ktmeaton/ActionRPG/commit/6f6e9df) create a blendspace for idle animations
+* [```84afcb0```](https://github.com/ktmeaton/ActionRPG/commit/84afcb0) update workflow badge for Godot CI
+* [```8233990```](https://github.com/ktmeaton/ActionRPG/commit/8233990) prepare notes for episode 6
+* [```5b53e3b```](https://github.com/ktmeaton/ActionRPG/commit/5b53e3b) update CHANGELOG for v0.5.0
+
 ## v0.5.0
 
 ### Notes
