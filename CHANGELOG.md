@@ -2,21 +2,61 @@
 
 ## Development
 
+### Commits
+
+## v0.5.0
+
+### Notes
+
+1. In the Player scene, add a new child node ```AnimationPlayer```.
+1. Create the Run animation.
+1. Create the Idle animation.
+1. Autplay an animation on game load.
+1. Create an intial animation implementation.
+
 ### Pull Requests
 
+* [```pull/5```](https://github.com/ktmeaton/ActionRPG/pull/5) Episode 5
 * [```pull/4```](https://github.com/ktmeaton/ActionRPG/pull/4) Episode 4.1
 
 ### Commits
 
+* [```e2568f1```](https://github.com/ktmeaton/ActionRPG/commit/e2568f1) Merge pull request #5 from ktmeaton/dev
+* [```9a50407```](https://github.com/ktmeaton/ActionRPG/commit/9a50407) fix rogue period in Notes
+* [```135968d```](https://github.com/ktmeaton/ActionRPG/commit/135968d) give release notes a dependency
+* [```4ad56fe```](https://github.com/ktmeaton/ActionRPG/commit/4ad56fe) try to restore previous CI
+* [```12c2fc7```](https://github.com/ktmeaton/ActionRPG/commit/12c2fc7) update workflows
+* [```5aad7ad```](https://github.com/ktmeaton/ActionRPG/commit/5aad7ad) create intial animation implementation
+* [```c7c5fd7```](https://github.com/ktmeaton/ActionRPG/commit/c7c5fd7) animate idle in 4 directions
+* [```a1a4b5f```](https://github.com/ktmeaton/ActionRPG/commit/a1a4b5f) animate run in 4 directions
+* [```c7d944d```](https://github.com/ktmeaton/ActionRPG/commit/c7d944d) arrange TOC as table
+* [```9e24a31```](https://github.com/ktmeaton/ActionRPG/commit/9e24a31) merge with master
+* [```17e1741```](https://github.com/ktmeaton/ActionRPG/commit/17e1741) reorganize the notes docs
+* [```9f330e8```](https://github.com/ktmeaton/ActionRPG/commit/9f330e8) ignore .bak files
+* [```320bb33```](https://github.com/ktmeaton/ActionRPG/commit/320bb33) Merge branch 'dev' of https://github.com/ktmeaton/ActionRPG into dev
+* [```2405b02```](https://github.com/ktmeaton/ActionRPG/commit/2405b02) Add heartbeast info to readme
+* [```b052ca3```](https://github.com/ktmeaton/ActionRPG/commit/b052ca3) update CI and CHANGELOG with new submodule autologs
 * [```f7b22bb```](https://github.com/ktmeaton/ActionRPG/commit/f7b22bb) add submodule autologs
 * [```13d248d```](https://github.com/ktmeaton/ActionRPG/commit/13d248d) remove old scripts
 * [```54f7834```](https://github.com/ktmeaton/ActionRPG/commit/54f7834) Merge pull request #4 from ktmeaton/dev
 * [```0bae4a5```](https://github.com/ktmeaton/ActionRPG/commit/0bae4a5) update Changelog after v0.4.1
+* [```6112d00```](https://github.com/ktmeaton/ActionRPG/commit/6112d00) try a different release action
+* [```37e6807```](https://github.com/ktmeaton/ActionRPG/commit/37e6807) fix typo
+* [```b598938```](https://github.com/ktmeaton/ActionRPG/commit/b598938) test get commit history
+* [```a854a3c```](https://github.com/ktmeaton/ActionRPG/commit/a854a3c) test release tags
+* [```24e651e```](https://github.com/ktmeaton/ActionRPG/commit/24e651e) test release
+* [```1ea52af```](https://github.com/ktmeaton/ActionRPG/commit/1ea52af) add badge
+* [```3fb507d```](https://github.com/ktmeaton/ActionRPG/commit/3fb507d) only upload on master branch
+* [```0907e00```](https://github.com/ktmeaton/ActionRPG/commit/0907e00) try to restrict again
+* [```b890904```](https://github.com/ktmeaton/ActionRPG/commit/b890904) fix typo
+* [```08e204e```](https://github.com/ktmeaton/ActionRPG/commit/08e204e) general condition
+* [```126ef21```](https://github.com/ktmeaton/ActionRPG/commit/126ef21) remove old build files
+* [```f86f2bb```](https://github.com/ktmeaton/ActionRPG/commit/f86f2bb) configure export for linux and mac also
+* [```44297ed```](https://github.com/ktmeaton/ActionRPG/commit/44297ed) fix relative build paths
+* [```a666106```](https://github.com/ktmeaton/ActionRPG/commit/a666106) test godot ci
+* [```904597e```](https://github.com/ktmeaton/ActionRPG/commit/904597e) rename html5 export
 
 ## v0.4.1
-
-### Pull Requests
-
 
 ### Commits
 
@@ -43,6 +83,15 @@
 
 ## v0.4.0
 
+### Notes
+
+1. Save 'Player' node as a scene.
+1. Create a 'Bush' scene.
+1. Add the new 'Bush' to the 'World' scene.
+1. Pros of 'World' being a 2D node.
+1. Keeping new scenes isolated.
+1. Add sorting layers.
+
 ### Pull Requests
 
 * [```pull/3```](https://github.com/ktmeaton/ActionRPG/pull/3) Episode 04
@@ -60,6 +109,16 @@
 
 ## v0.3.0
 
+### Notes
+
+1. Fix bug where clamping is dependent on delta.
+2. Use the move_toward() function for calculating all velocties.
+3. Reoptimize speed.
+4. Setup collisions.
+5. Test collisions.
+6. Optimize collision physics.
+7. Fix warning about fonts.
+
 ### Pull Requests
 
 * [```pull/2```](https://github.com/ktmeaton/ActionRPG/pull/2) Episode 03
@@ -73,6 +132,10 @@
 
 ## v0.2.0
 
+### Notes
+
+1. Smooth Movement
+
 ### Pull Requests
 
 * [```pull/1```](https://github.com/ktmeaton/ActionRPG/pull/1) Episode 02
@@ -84,8 +147,15 @@
 
 ## v0.1.0
 
-### Pull Requests
+### Notes
 
+1. Create Godot Project.
+1. Setup Git Repository.
+1. Configure Project for 2D Pixel Art.
+1. Import Assets.
+1. Configure Scene Resolution and Scaling.
+1. Create a Character.
+1. Implement Character Movement.
 
 ### Commits
 
