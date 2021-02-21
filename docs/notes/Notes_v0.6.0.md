@@ -81,4 +81,6 @@
     - AnimationTree -> Idle -> Blendspace
     - To priortize Left and Right over up and down:
         - (x:0, y:1) -> (x:0, y:1.1)
+        - (x:0, y:-1) -> (x:0, y:-1.1) 
+    - Repeat for Run blendspace.
 
