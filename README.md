@@ -1,6 +1,6 @@
 # ActionRPG
 
-![Godot Export](https://github.com/ktmeaton/ActionRPG/workflows/Godot%20Export/badge.svg)
+[![Godot CI](https://github.com/ktmeaton/ActionRPG/actions/workflows/ci.yaml/badge.svg)](https://github.com/ktmeaton/ActionRPG/actions/workflows/ci.yaml)
 
 A repo following the Godot tutorial by [@heartgamedev](https://www.heartgamedev.com/):
 
