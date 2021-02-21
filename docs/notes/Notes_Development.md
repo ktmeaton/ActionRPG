@@ -19,3 +19,16 @@
     - Select the Collision tab.
     - Select the rectangle tool.
     - Create a rectangle collision for every tile.
+
+1. Review the occlusion tab.
+
+    - Autotiles can automatically create shadows.
+
+1. Review the navigation tab.
+
+    - A navigation mesh can allow enemies to navigate the tile.
+
+1. Priority
+
+    - Control randomization of tiles.
+    - Example: a flower on grass could have a 1/20 of being placed.
