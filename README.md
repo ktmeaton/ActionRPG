@@ -19,12 +19,14 @@ A repo following the Godot tutorial by [@heartgamedev](https://www.heartgamedev.
 | 05      | [P5 \| AnimationPlayer](https://www.youtube.com/watch?v=wX145eoLFSM)             | [Episode 5](https://github.com/ktmeaton/ActionRPG/blob/dev/docs/notes/Notes_v0.5.0.md) | [v0.5.0](https://github.com/ktmeaton/ActionRPG/tree/v0.5.0) |
 | 06      | [P6 \| AnimationTree](https://www.youtube.com/watch?v=Z9aR9IiiHT8)             | [Episode 6](https://github.com/ktmeaton/ActionRPG/blob/dev/docs/notes/Notes_v0.6.0.md) | [v0.6.0](https://github.com/ktmeaton/ActionRPG/tree/v0.6.0) |
 | 07      | [P7 \| Grass and Dirt](https://www.youtube.com/watch?v=v75IMavnRUs)             | [Episode 7](https://github.com/ktmeaton/ActionRPG/blob/dev/docs/notes/Notes_v0.7.0.md) | [v0.7.0](https://github.com/ktmeaton/ActionRPG/tree/v0.7.0) |
+| 08      | [P8 \| Autotile Collisions](https://www.youtube.com/watch?v=RPgTlxb7Bno)             | [Episode 8](https://github.com/ktmeaton/ActionRPG/blob/dev/docs/notes/Notes_v0.8.0.md) | [v0.8.0](https://github.com/ktmeaton/ActionRPG/tree/v0.8.0) |
+
 
 ### Development
 
 | Episode   | Video    | Notes     | Checkout   |
 |:---------:|:---------|-----------|------------|
-| 08      | [P8 \| Autotile Collisions](https://www.youtube.com/watch?v=RPgTlxb7Bno)             | [Episode 8](https://github.com/ktmeaton/ActionRPG/blob/dev/docs/notes/Notes_v0.8.0.md) | [v0.8.0](https://github.com/ktmeaton/ActionRPG/tree/v0.8.0) |
+| 09      | [P9 \| Attacking Animation + State Machines](https://www.youtube.com/watch?v=0nd1zNiy0C4)             | [Episode 9](https://github.com/ktmeaton/ActionRPG/blob/dev/docs/notes/Notes_v0.9.0.md) | [v0.9.0](https://github.com/ktmeaton/ActionRPG/tree/v0.9.0) |
 
 ## Credits
 
