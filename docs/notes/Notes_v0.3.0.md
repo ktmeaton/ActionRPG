@@ -1,4 +1,4 @@
-# Episode 03
+# Episode 3
 
 1. Fix bug where clamping is dependent on delta.
 
