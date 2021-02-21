@@ -79,4 +79,9 @@
     - Select the TileMap node.
     - Select the Dirt tileset.
     - Draw!
+
+1. Change the dirtmap tile icon.
+
+    - Select the region, click the "Icon" tab.
+    - Pick the 1x1 tile
     
