@@ -42,4 +42,22 @@
     - Con: This is a control type node which isn't meant to be used like this. Meant for UI type elements.
     - HeartBeast doesn't know how significant the drawbacks are to use a TextureRect, but will use the Sprite method here.
     - Delete the TextureRectBackground
+
+1. Create a Tilemap child note of World.
+
+    - Place below Background
+    - Cell -> Size
+        - x: 16
+        - y: 16
+    - Tile Set: New TileSet
+    - Click on the tileset to get Resource options and Tileset window.
+    - In the bottom left, click the button "Add Textures to Tileset"
+    - Add ```World/DirtTileset.png```
+    - + New Autotile
+    - Enable Snap and Show grid
+    - Drag and outline the tiles to get new properties in Inspector.
+    - Snap Options
+        Step: 16 x 16
+    - Redraw region to outline.
+    - If we you click on Tilemap in nodes, you can see the new tileset.
     
