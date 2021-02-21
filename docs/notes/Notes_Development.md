@@ -45,4 +45,32 @@
     - Blend: Dots
     - Click the AnimationTree Node
     - Inspector -> Parameters -> Run:
-        - Blend Position: 0,0    
+        - Blend Position: 0,0 
+
+1. Create Transition between Idle and Run (both ways)
+
+1. Connect AnimationTree to Player script.
+
+    - Initialize the AnimationTree on ready
+    - Only update AnimationTree run on input (otherwise it will get set to 0 which will be associated with facing to the left)
+    - Get the string name of the property we want to set
+        - AnimationTree -> Parameters -> Idle -> Blend Position (Hover Mouse)
+            - ```parameters/Idle/blend_position```
+    - Set the animationTree values for Run and Idle to the input vector.
+
+1. Set an animation to play on load.
+
+    - AnimationTree -> root -> Idle
+    - Click button "Toggle autoplay on start..."
+
+1. Disable RunRight auto animation.
+
+    - AnimationPlayer -> RunRight
+    - Uncheck "Autoplay on load"
+
+1. Set the animation state
+
+    - Initialize the AnimationState on ready
+    - Access to the AnimationState is needed to set the animation.
+    - Set the animation state using the ```travel``` function.
+
