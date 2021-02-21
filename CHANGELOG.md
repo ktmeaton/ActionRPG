@@ -4,6 +4,30 @@
 
 ### Commits
 
+## v0.8.0
+
+### Notes
+
+1. Rename the old tilemap to "DirtPathTileMap"
+1. Create a new TileMap child node of world named "DirtCliffTileMap"
+1. Set up collisions for the cliff.
+1. Review the occlusion tab.
+1. Review the navigation tab.
+1. Priority
+
+### Pull Requests
+
+* [```pull/8```](https://github.com/ktmeaton/ActionRPG/pull/8) Episode 8
+
+### Commits
+
+* [```bff9026```](https://github.com/ktmeaton/ActionRPG/commit/bff9026) Merge pull request #8 from ktmeaton/dev
+* [```00b3fa5```](https://github.com/ktmeaton/ActionRPG/commit/00b3fa5) review the remaining tileset tabs
+* [```b90bf15```](https://github.com/ktmeaton/ActionRPG/commit/b90bf15) paint in cliffs and add collisions
+* [```b76a82e```](https://github.com/ktmeaton/ActionRPG/commit/b76a82e) Add Heart GameDev's MIT License
+* [```798373a```](https://github.com/ktmeaton/ActionRPG/commit/798373a) prepare for Episode 8
+* [```4c850cb```](https://github.com/ktmeaton/ActionRPG/commit/4c850cb) add CHANGELOG for Episode 7
+
 ## v0.7.0
 
 ### Notes
