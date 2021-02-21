@@ -1,4 +1,4 @@
-# Episode 8
+# Episode 9
 
 1. Uncheck "Active" in the AnimationTree to stop autoplay.
 
@@ -36,3 +36,9 @@
     - Right Click on New Track and Add Key -> attack_animation_finished
 
 1. Set velocity in attack state to zero and remove attack looping.
+
+1. Add gdlinter as a submodule.
+
+    - mamba env create -f environment.yaml
+    - conda activate action-rpg
+    - git submodule add https://github.com/binogure-studio/gdlinter.git
