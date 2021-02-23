@@ -4,6 +4,33 @@
 
 ### Commits
 
+## v0.9.0
+
+### Notes
+
+1. Uncheck "Active" in the AnimationTree to stop autoplay.
+1. Create Attack animations.
+1. Create a state machine in the Player script.
+1. Add wasd to Input Map
+1. Create an attack action
+1. Create a new blendspace2d for Attacking.
+1. Configure stopping point of attack animation.
+1. Set velocity in attack state to zero and remove attack looping.
+1. Add gdlinter as a submodule.
+
+### Pull Requests
+
+* [```pull/9```](https://github.com/ktmeaton/ActionRPG/pull/9) Episode 9
+
+### Commits
+
+* [```2d72d10```](https://github.com/ktmeaton/ActionRPG/commit/2d72d10) Merge pull request #9 from ktmeaton/dev
+* [```237970f```](https://github.com/ktmeaton/ActionRPG/commit/237970f) finish Episode 9
+* [```646586c```](https://github.com/ktmeaton/ActionRPG/commit/646586c) finish Episode 9
+* [```555e667```](https://github.com/ktmeaton/ActionRPG/commit/555e667) add wasd keys to input map
+* [```41974ca```](https://github.com/ktmeaton/ActionRPG/commit/41974ca) add Attack animations
+* [```9d1c40b```](https://github.com/ktmeaton/ActionRPG/commit/9d1c40b) begin Episode 9
+
 ## v0.8.0
 
 ### Notes
@@ -21,6 +48,7 @@
 
 ### Commits
 
+* [```d8c02f5```](https://github.com/ktmeaton/ActionRPG/commit/d8c02f5) add changelog for Episode 8
 * [```bff9026```](https://github.com/ktmeaton/ActionRPG/commit/bff9026) Merge pull request #8 from ktmeaton/dev
 * [```00b3fa5```](https://github.com/ktmeaton/ActionRPG/commit/00b3fa5) review the remaining tileset tabs
 * [```b90bf15```](https://github.com/ktmeaton/ActionRPG/commit/b90bf15) paint in cliffs and add collisions
