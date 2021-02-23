@@ -4,6 +4,91 @@
 
 ### Commits
 
+## v0.8.0
+
+### Notes
+
+1. Rename the old tilemap to "DirtPathTileMap"
+1. Create a new TileMap child node of world named "DirtCliffTileMap"
+1. Set up collisions for the cliff.
+1. Review the occlusion tab.
+1. Review the navigation tab.
+1. Priority
+
+### Pull Requests
+
+* [```pull/8```](https://github.com/ktmeaton/ActionRPG/pull/8) Episode 8
+
+### Commits
+
+* [```bff9026```](https://github.com/ktmeaton/ActionRPG/commit/bff9026) Merge pull request #8 from ktmeaton/dev
+* [```00b3fa5```](https://github.com/ktmeaton/ActionRPG/commit/00b3fa5) review the remaining tileset tabs
+* [```b90bf15```](https://github.com/ktmeaton/ActionRPG/commit/b90bf15) paint in cliffs and add collisions
+* [```b76a82e```](https://github.com/ktmeaton/ActionRPG/commit/b76a82e) Add Heart GameDev's MIT License
+* [```798373a```](https://github.com/ktmeaton/ActionRPG/commit/798373a) prepare for Episode 8
+* [```4c850cb```](https://github.com/ktmeaton/ActionRPG/commit/4c850cb) add CHANGELOG for Episode 7
+
+## v0.7.0
+
+### Notes
+
+1. Change the World node back to a Node2D.
+1. Add a new ysort node as a child of World.
+1. Delete the StaticBody2D.
+1. Option 1) Add a Sprite childnode to world named "Background"
+1. Make the GrassBackground sprite repeat.
+1. Option 2) Add a TextureRect childnode to world named "TextureRectBackground".
+1. Create a Tilemap child note of World.
+1. Configure Tilemap
+ 1. Draw the tile bitmask:
+1. Place the autotiles
+1. Change the dirtmap tile icon.
+
+### Pull Requests
+
+* [```pull/7```](https://github.com/ktmeaton/ActionRPG/pull/7) Episode 7
+
+### Commits
+
+* [```e79873b```](https://github.com/ktmeaton/ActionRPG/commit/e79873b) Merge pull request #7 from ktmeaton/dev
+* [```9080ad4```](https://github.com/ktmeaton/ActionRPG/commit/9080ad4) change the dirt tileset icon
+* [```03e33de```](https://github.com/ktmeaton/ActionRPG/commit/03e33de) create the dirt bitmap and paint the scene
+* [```105e1b8```](https://github.com/ktmeaton/ActionRPG/commit/105e1b8) create a tilemap and dirt tileset
+* [```e5c32de```](https://github.com/ktmeaton/ActionRPG/commit/e5c32de) Create the grass background sprite node
+* [```d9c3a1b```](https://github.com/ktmeaton/ActionRPG/commit/d9c3a1b) prep for Episode 7
+* [```4e0834d```](https://github.com/ktmeaton/ActionRPG/commit/4e0834d) Merge pull request #6 from ktmeaton/dev
+* [```374582b```](https://github.com/ktmeaton/ActionRPG/commit/374582b) update CHANGELOG for Episode 6
+
+## v0.6.0
+
+### Notes
+
+1. In the Player scene, add a new child node ```AnimationTree```.
+1. Add animations to the tree (test)
+1. Add an Idle BlendSpace for multiple directions.
+1. Create a Run Blendspace
+1. Create Transition between Idle and Run (both ways)
+1. Connect AnimationTree to Player script.
+1. Set an animation to play on load.
+1. Disable RunRight auto animation.
+1. Set the animation state
+1. Make the run animations directionally consistent.
+
+### Pull Requests
+
+* [```pull/6```](https://github.com/ktmeaton/ActionRPG/pull/6) Episode 6
+
+### Commits
+
+* [```244ad6e```](https://github.com/ktmeaton/ActionRPG/commit/244ad6e) finish Episode 6
+* [```b8c1954```](https://github.com/ktmeaton/ActionRPG/commit/b8c1954) prioritize L-R anim over U-D anim
+* [```9213f04```](https://github.com/ktmeaton/ActionRPG/commit/9213f04) implement run and idle anims in player script
+* [```429cd37```](https://github.com/ktmeaton/ActionRPG/commit/429cd37) create a blendspace for run animations
+* [```6f6e9df```](https://github.com/ktmeaton/ActionRPG/commit/6f6e9df) create a blendspace for idle animations
+* [```84afcb0```](https://github.com/ktmeaton/ActionRPG/commit/84afcb0) update workflow badge for Godot CI
+* [```8233990```](https://github.com/ktmeaton/ActionRPG/commit/8233990) prepare notes for episode 6
+* [```5b53e3b```](https://github.com/ktmeaton/ActionRPG/commit/5b53e3b) update CHANGELOG for v0.5.0
+
 ## v0.5.0
 
 ### Notes

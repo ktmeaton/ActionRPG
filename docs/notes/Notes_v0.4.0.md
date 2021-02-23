@@ -1,4 +1,4 @@
-# Episode 04
+# Episode 4
 
 1. Save 'Player' node as a scene.
 

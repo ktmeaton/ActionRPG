@@ -1,4 +1,4 @@
-# Episode 02
+# Episode 2
 
 1. Smooth Movement
 

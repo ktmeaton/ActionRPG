@@ -1,4 +1,4 @@
-# Episode 01
+# Episode 1
 
 1. Create Godot Project.
 

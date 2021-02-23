@@ -1,4 +1,4 @@
-# Episode 05
+# Episode 5
 
 1. In the Player scene, add a new child node ```AnimationPlayer```.
 
